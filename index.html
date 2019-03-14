@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NodeWeaver</title>
+		<meta charset="UTF-8">
+  		<meta name="author" content="John Cotterell">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Quicksand:500|Source+Code+Pro" rel="stylesheet">
+  		<link type="text/css" rel="stylesheet" href="css/style.css">
+  		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css"/>
+  		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  		<script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+	</head>
+	<body>
+
+		<div id="drawing"></div>
+		<div id="rootnode">
+
+			<div class="node" id="1" style="left: 71.5566%; top: 39.7626%;">
+				<div class="nodetitle">Test Node</div>
+				<div class="node" id="2" style="left: 100px; top: 100px;">
+					<div class="nodetitle">Test Child A</div>
+				</div>
+				<div class="node" id="3" style="left: -100px; top: 100px;">
+					<div class="nodetitle">Test Child B</div>
+				</div>
+			</div>
+    			
+			</div>
+
+			<div class="node UI" style="top: 1%; left: 1%;" id="0">
+				<div class="nodetitle" id="logintext">LOGIN</div>
+				<div id="firebaseui-auth-container"></div>
+				<div id="loader">Loading...</div>
+			</div>
+		</div>
+		
+		<div id="drawingover"></div>
+
+		<div id="rootnodeover">
+			<!--This is how you define a non-hierarchical join between nodes-->
+			<div class="join" id="2_2_1"><div class="jointitle">Mentioned here</div></div>
+		</div>
+
+		<script src="js/svg.min.js"></script>
+		<script src="js/nodeweaver.js"></script>
+
+	</body>
+</html>
