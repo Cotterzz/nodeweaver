@@ -1,0 +1,94 @@
+body {
+	margin:0px;
+	padding:0px;
+    overflow:hidden;
+}
+
+#rootnode{
+	font-size: 20px;
+	
+}
+
+#drawingover{
+    pointer-events: none;
+}
+
+
+.node {
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9em;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    background: #eeeeee;
+    position: absolute;
+    z-index: 9;
+    cursor:default;
+}
+
+.title {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 10px;
+    cursor:default;
+     position: absolute;
+    
+}
+
+.book {
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    background: none;
+    position: absolute;
+}
+
+.sentence {
+    font-family: 'Abel', sans-serif;
+    font-size: 12px;
+    position: absolute;
+        background: #efefef;
+    border: 1px solid #dddddd;;
+    border-radius: 2px;
+    top:30px;
+    width:200px;
+    
+}
+
+.paragraph {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size:12px;
+    background: #efefef;
+    border: 1px;
+    border-radius: 2px;
+     position: absolute;
+
+}
+
+
+.join {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    background: none;
+    position: absolute;
+}
+
+
+.UI {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    background: #F2F2F2;
+    cursor:default;
+    width: 250px;
+}
+
+
+svg {
+    position: absolute;
+
+}
